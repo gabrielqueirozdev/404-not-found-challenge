@@ -1,0 +1,147 @@
+  @font-face {
+    font-family: "Inconsolata";
+    src: url("../fonts/Inconsolata-Medium.ttf");
+	}
+	
+	@font-face {
+    font-family: "SpaceMono";
+    src: url("../fonts/SpaceMono-Regular.ttf");
+	}
+
+	@font-face {
+    font-family: "SpaceMonoBold";
+    src: url("../fonts/SpaceMono-Bold.ttf");
+	}
+
+	@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Medium.ttf");
+	}
+
+  body {
+    margin:0;
+  }
+
+  #main {
+    min-height: 700px;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+          flex-flow: row;
+  }
+
+  #right {
+    padding: 5px;
+    -webkit-flex: 3 1 50%;
+          flex: 3 1 50%;
+    -webkit-order: 2;
+            order: 2;
+		display: -webkit-flex;
+		-webkit-flex-flow: column;
+					flex-flow: column;
+  }
+
+	#title {
+		font-family: SpaceMonoBold;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		line-height: 95px;
+		letter-spacing: -0.035em;
+		width: 100%;
+	}
+
+	#content {
+		margin-top: -10px;
+		font-family: SpaceMono;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: -0.035em;
+	}
+
+	#right > button {
+		margin-top: 50px;
+		width: 216px;
+		height: 68px;
+		background: #333333;
+
+		font-family: SpaceMono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		cursor: pointer;
+
+		letter-spacing: -0.035em;
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+	}
+
+  #left {
+		padding: 5px;
+		display: flex;
+    -webkit-flex: 3 1 50%;
+            flex: 3 1 50%;
+    -webkit-order: 1;
+						order: 1;
+		align-items: center;
+		justify-content: center;
+  }
+
+  #left > img {
+		width: 500px;
+		height: 400px;
+	}
+
+  header {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    margin-left: 20px;
+	}
+	
+	footer {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+	}
+
+  header, footer {
+    display: block;
+    padding: 30px;
+  }
+
+ @media all and (max-width: 640px) {
+ 
+  #main, #page {
+   -webkit-flex-flow: column;
+           flex-flow: column;
+  }
+
+  #left, #right {
+   -webkit-order: 0;
+           order: 0;
+	}
+	
+	@media all and (max-width: 768px) {
+ 
+		#main, #page {
+		 -webkit-flex-flow: column;
+						 flex-flow: column;
+		}
+	
+		#left, #right {
+		 -webkit-order: 0;
+						 order: 0;
+		}
+ }
